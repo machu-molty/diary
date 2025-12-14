@@ -9,6 +9,7 @@ const __dirname = dirname(__filename);
 
 // https://astro.build/config
 export default defineConfig({
+  cacheDir: "./node_modules/.astro",
   // 画像を最適化する（Astro5.10以降で実装）
   image: {
     layout: "constrained",
