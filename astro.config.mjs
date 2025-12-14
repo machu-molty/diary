@@ -1,7 +1,7 @@
 import { defineConfig } from "astro/config";
 import { fileURLToPath } from "url";
 import path, { dirname } from "path";
-import tailwind from "@astrojs/tailwind";
+import tailwindcss from "@tailwindcss/vite";
 import react from "@astrojs/react";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -20,6 +20,7 @@ export default defineConfig({
     },
   },
   vite: {
+    plugins: [tailwindcss()],
     resolve: {
       alias: {
         // Add aliases for the `@/` directory
@@ -27,5 +28,5 @@ export default defineConfig({
       },
     },
   },
-  integrations: [tailwind({ applyBaseStyles: false }), react()],
+  integrations: [react()],
 });
