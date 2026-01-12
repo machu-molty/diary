@@ -8,7 +8,7 @@
 
 - **フレームワーク**: Astro v5
 - **言語**: TypeScript
-- **UIライブラリ**: React（コンポーネント用）
+- **UIライブラリ**: Astroコンポーネント
 - **スタイリング**: Tailwind CSS
 - **画像処理**: Sharp
 - **ビルドツール**: Vite
@@ -216,10 +216,10 @@ Astro 5.9の`experimental.responsiveImages`機能により、Markdown内の画�
 - `pnpm lint` — run ESLint for Astro/TS/Tailwind.
 
 ## Coding Style & Naming Conventions
-- Languages: Astro, TypeScript, React (TSX), Tailwind CSS.
+- Languages: Astro, TypeScript, Tailwind CSS.
 - Formatting: Prettier with `prettier-plugin-astro` and `prettier-plugin-tailwindcss` (2-space indent). Commit formatted code.
 - Linting: ESLint with `eslint-plugin-astro` and Tailwind plugin; Tailwind class order rule is disabled.
-- Naming: Astro components in PascalCase (`Header.astro`); React UI files follow upstream lower-case style (`button.tsx`, `dropdown-menu.tsx`). Utilities use lowerCamelCase. Posts use `YYYYMMDDpNN` segments.
+- Naming: Astro components in PascalCase (`Header.astro`); utilities use lowerCamelCase. Posts use `YYYYMMDDpNN` segments.
 
 ## Testing Guidelines
 - ユニット → 出力検証 → 最小E2Eの順で導入。

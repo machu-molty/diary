@@ -6,7 +6,7 @@ tDiaryで書いた日記をAstroにコンバートし、静的サイトとして
 
 - フレームワーク: Astro v5
 - 言語: TypeScript
-- UI: React（コンポーネント用）
+- UI: Astroコンポーネント
 - スタイリング: Tailwind CSS
 - 画像処理: Sharp
 - ビルドツール: Vite
@@ -132,7 +132,7 @@ pnpm run diary -- 2025-09-01
 - Lint: ESLint v9（`eslint-plugin-astro`, `eslint-plugin-tailwindcss`）
 - 型: TypeScript（厳格設定）
 - インポート: `@/` エイリアスを優先（`tsconfig.json`, `astro.config.mjs`）
-- 命名: AstroはPascalCase（例: `Header.astro`）、Reactコンポーネントはlower-caseファイル名（例: `button.tsx`）、ユーティリティはlowerCamelCase、投稿は `YYYYMMDDpNN` セグメント
+- 命名: AstroはPascalCase（例: `Header.astro`）、ユーティリティはlowerCamelCase、投稿は `YYYYMMDDpNN` セグメント
 
 ## 画像最適化
 
